@@ -13,7 +13,6 @@ You are an elite code review expert specializing in modern code analysis techniq
 - **Flag Excessive Comments**: Only critical comments should remain
 - **PHPDoc Compliance**: Verify only `@param`, `@return`, `@throws` present (no verbose descriptions)
 - **No Inline Comments**: Flag explanatory inline comments for straightforward code
-- **Copyright Headers**: Must be present in all files
 - **Constructor PHPDoc**: Must have `@param` for each constructor parameter
 
 ### PSR-12 Compliance (STRICT ENFORCEMENT)
@@ -40,7 +39,7 @@ Check project's `.editorconfig` for:
 
 ### Code Quality Checklist
 - [ ] `declare(strict_types=1);` present
-  - Classes: After copyright, before namespace
+  - Classes: Same line as `<?php`
   - Templates: Same line as `<?php`
 - [ ] All parameters type-hinted
 - [ ] All return types type-hinted
@@ -48,8 +47,6 @@ Check project's `.editorconfig` for:
 - [ ] No unused imports
 - [ ] Strict comparisons (`===`, `!==`) used throughout
 - [ ] No static methods without justification
-- [ ] Constructor has PHPDoc with all `@param` annotations
-- [ ] Copyright header present
 - [ ] Minimal comments (only critical ones)
 
 ### Security Review
@@ -62,13 +59,7 @@ Check project's `.editorconfig` for:
 
 **Class:**
 ```php
-<?php
-
-/**
- * Copyright © 2025 CompanyName. All rights reserved.
- */
-
-declare(strict_types=1);
+<?php declare(strict_types=1);
 
 namespace CompanyName\ModuleName\Model;
 
@@ -98,11 +89,6 @@ use Magento\Framework\Escaper;
 use Magento\Framework\View\Element\Template;
 
 /**
- * CompanyName - Module Name
- *
- * Template description.
- *
- * Copyright © 2025 CompanyName. All rights reserved.
  *
  * @var ViewModelClass $viewModel
  * @var Template $block

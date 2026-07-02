@@ -17,10 +17,10 @@ DevOps and infrastructure specialists focused on deployment automation, environm
 - **Best for**: Server optimization, environment standardization, performance tuning
 
 ### 💻 [local-environment-specialist](./local-environment-specialist.md)
-**Local development specialist** - Docker, Valet+, and native development environments
+**Local development specialist** - Docker, Warden, Valet+, and native development environments
 - **When to use**: Local development setup, debugging configuration, development workflow optimization
 - **Delegates to**: php-specialist, performance-analyst, security-analyst
-- **Best for**: Docker environments, Valet+ setup, IDE integration, debugging workflows
+- **Best for**: Warden, Docker environments, Valet+ setup, IDE integration, debugging workflows
 
 ## Infrastructure Focus Areas
 
@@ -43,6 +43,7 @@ DevOps and infrastructure specialists focused on deployment automation, environm
 ### Local Development
 **Developer productivity optimization**
 - **Docker Environments**: Containerized development with Docker Compose
+- **Warden Environments**: Containerized development with Docker Compose
 - **Valet+ Integration**: Lightweight development environment for macOS/Linux
 - **Native Stack Setup**: Traditional LAMP/LEMP stack optimization
 - **IDE Integration**: PHPStorm, VS Code debugging and development tools

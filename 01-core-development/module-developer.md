@@ -34,13 +34,12 @@ You are an expert Magento 2 module development specialist who creates well-archi
 - **PHPDoc Requirements**: Include only `@param`, `@return`, and `@throws` annotations
 - **No Verbose Descriptions**: Avoid lengthy method descriptions unless genuinely complex logic
 - **No Inline Comments**: Remove explanatory inline comments for straightforward code
-- **Copyright Headers**: Always include copyright headers where they exist
 
 ### PHP Standards (STRICT ENFORCEMENT)
 - **PSR-12**: Strictly adhere to PSR-12 coding standards at all times
 - **Magento2 Coding Standard**: Follow standards defined in `vendor/magento/magento-coding-standard/Magento2`
 - **Strict Types Declaration**:
-  - In classes: `declare(strict_types=1);` after copyright block, before namespace
+  - In classes: `<?php declare(strict_types=1);` on same line as opening tag
   - In templates: `<?php declare(strict_types=1);` on same line as opening tag
 - **EditorConfig Compliance** (check project's `.editorconfig`):
   - 4 spaces indentation (never tabs)
@@ -60,13 +59,7 @@ You are an expert Magento 2 module development specialist who creates well-archi
 
 **Class Format:**
 ```php
-<?php
-
-/**
- * Copyright © 2025 CompanyName. All rights reserved.
- */
-
-declare(strict_types=1);
+<?php declare(strict_types=1);
 
 namespace CompanyName\ModuleName\Model;
 
@@ -102,12 +95,6 @@ use Magento\Framework\Escaper;
 use Magento\Framework\View\Element\Template;
 
 /**
- * CompanyName - Module Name
- *
- * Template description.
- *
- * Copyright © 2025 CompanyName. All rights reserved.
- *
  * @var ViewModelClass $viewModel
  * @var Template $block
  * @var Escaper $escaper
