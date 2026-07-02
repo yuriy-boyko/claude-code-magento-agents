@@ -14,12 +14,13 @@ This repository contains Claude Code agent definitions for Magento 2 development
    - `theme-developer.md` - Theme development expert
    - `issue-debugger.md` - Bug investigation and resolution specialist
    - `module-developer.md` - Custom module development expert
+   - `upgrade-specialist.md` - Version upgrade and migration specialist
 
 2. **02-frontend-development/** - Frontend development specialists
    - `hyva-specialist.md` - Hyvä theme development expert
    - `luma-specialist.md` - Luma theme customization specialist
-   - `layout-developer.md` - XML layout construction expert
-   - `template-developer.md` - PHTML template development specialist
+   - `frontend-developer.md` - Comprehensive frontend development specialist
+   - `ui-component-developer.md` - UI Component and admin interface specialist
 
 3. **03-backend-development/** - Backend development specialists
    - `api-developer.md` - REST/GraphQL API development expert
@@ -36,24 +37,32 @@ This repository contains Claude Code agent definitions for Magento 2 development
    - `php-specialist.md` - Advanced PHP development expert
    - `alpine-specialist.md` - Alpine.js integration specialist
    - `knockout-specialist.md` - Knockout.js development expert
-   - `less-specialist.md` - LESS preprocessing specialist
-   - `sass-specialist.md` - SASS/SCSS development expert
+   - `css-specialist.md` - CSS and LESS preprocessing specialist
+   - `requirejs-specialist.md` - RequireJS and AMD module specialist
+   - `xml-specialist.md` - XML configuration specialist
    - `magewire-specialist.md` - Magewire (Livewire for Magento) specialist
 
 6. **06-infrastructure/** - Infrastructure and deployment engineers
    - `deployment-engineer.md` - Deployment automation and CI/CD expert
    - `environment-engineer.md` - Environment setup and configuration specialist
+   - `local-environment-specialist.md` - Local development environment specialist
+
+7. **07-ecommerce-specialists/** - E-commerce information analysts
+   - `catalog-specialist.md` - Catalog data analysis and health assessment specialist
+   - `order-specialist.md` - Order data analysis and transaction specialist
+   - `configuration-specialist.md` - System configuration analysis specialist
 
 ## Naming Convention
 
 The repository follows a standardized naming pattern for consistency:
 
-- **Core Development**: `{function}-developer.md`, `{function}-reviewer.md`, or `{function}-debugger.md`
+- **Core Development**: `{function}-developer.md`, `{function}-reviewer.md`, `{function}-debugger.md`, or `{function}-specialist.md`
 - **Frontend Development**: `{technology}-specialist.md` or `{function}-developer.md`
 - **Backend Development**: `{function}-developer.md`
 - **Performance/Security**: `{domain}-analyst.md`
 - **Language Specialists**: `{technology}-specialist.md`
-- **Infrastructure**: `{function}-engineer.md`
+- **Infrastructure**: `{function}-engineer.md` or `{function}-specialist.md`
+- **E-commerce Specialists**: `{domain}-specialist.md` or `{domain}-analyst.md`
 
 ## Agent Definition Structure
 
@@ -82,12 +91,14 @@ When working with these agents, they should be familiar with:
 - Dependency injection and service contracts
 - Plugin system and observers
 - Layout XML and template hierarchy
+- UI Components (forms, grids, listings)
 - CLI commands and cron jobs
 - API development (REST/GraphQL)
 - Performance optimization (caching, indexing)
 - Security best practices
 - Theme development (Luma, Hyvä)
 - Frontend technologies (RequireJS, KnockoutJS, Alpine.js)
+- E-commerce operations (catalog, orders, configuration)
 
 ## Agent Specialization
 
