@@ -6,6 +6,10 @@ A comprehensive collection of specialized Claude Code agents designed to optimiz
 
 These agents are designed to work together hierarchically - generalist agents can automatically delegate to specialists, creating a powerful development ecosystem that scales from simple tasks to complex enterprise implementations.
 
+## Installation
+
+See [INSTALLATION.md](./INSTALLATION.md) for how to install these agents into a single project or globally for Claude Code.
+
 ## Agent Categories
 
 ### 🔧 [01-core-development](./01-core-development/)
